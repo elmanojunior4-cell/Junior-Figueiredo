@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Estúdio JF — Galeria, seleção e venda de fotos extras
 
-## Getting Started
+Sistema próprio da Júnior Figueiredo Fotografia para substituir o Alboom Proof.
 
-First, run the development server:
+**Módulo 1 (este):** galeria do casal por momentos, seleção das fotos do álbum, cobrança automática das fotos extras (Mercado Pago) e lista pronta para o Lightroom.
+**Próximos módulos:** CRM com funil e Google Agenda, avisos por WhatsApp, diagramador de álbum integrado.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Como funciona
+
+1. Na área do estúdio (`/admin`), crie a galeria do casal com o limite do pacote e o preço das extras.
+2. Suba as fotos tratadas por seção (Pré-wedding, Making of, Cerimônia, Recepção). O navegador gera a versão web com marca d'água e a miniatura; o original vai em alta para o R2.
+3. Publique e envie o link + senha pelo WhatsApp (a mensagem já vem pronta para copiar).
+4. O casal marca as fotos com o coração. Ao finalizar:
+   - dentro do pacote → a seleção fecha na hora;
+   - acima do pacote → abre o checkout do Mercado Pago (Pix ou cartão em até 12x) e a seleção fecha quando o pagamento é aprovado.
+5. Na galeria, copie a lista "Para o Lightroom" e cole no Filtro da Biblioteca → Texto → Nome do arquivo → Contém.
+
+## Instalação
+
+### 1. Supabase (banco de dados)
+1. Crie um projeto em supabase.com.
+2. Em **SQL Editor**, rode o arquivo `supabase/migrations/0001_galeria.sql`.
+3. Em **Project Settings → API**, copie a URL e a `service_role key`.
+
+### 2. Cloudflare R2 (fotos)
+1. Crie o bucket `estudio-jf-fotos` (privado).
+2. Em **Manage API tokens**, crie um token com *Object Read & Write* nesse bucket.
+3. Em **Settings → CORS policy** do bucket, cole:
+```json
+[
+  {
+    "AllowedOrigins": ["https://galeria.seudominio.com.br", "http://localhost:3000"],
+    "AllowedMethods": ["GET", "PUT"],
+    "AllowedHeaders": ["Content-Type"],
+    "MaxAgeSeconds": 3600
+  }
+]
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 3. Mercado Pago
+1. Em **Suas integrações**, crie uma aplicação e copie o *Access Token de produção*.
+2. Em **Webhooks**, cadastre `https://galeria.seudominio.com.br/api/mp/webhook` com o evento **Pagamentos** e copie a assinatura secreta.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 4. Vercel
+1. Importe este repositório na Vercel.
+2. Em **Settings → Environment Variables**, preencha as variáveis do `.env.example`.
+3. Em **Settings → Domains**, adicione `galeria.seudominio.com.br` e crie o registro CNAME indicado no seu provedor de domínio.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Rodar no computador
+```bash
+cp .env.example .env.local   # preencha os valores
+npm install
+npm run dev                  # http://localhost:3000
+```
 
-## Learn More
+## Estrutura
 
-To learn more about Next.js, take a look at the following resources:
+```
+src/app/admin/            painel do estúdio (lista, nova galeria, detalhe)
+src/app/g/[slug]/         galeria do casal (senha, seleção, lightbox, checkout)
+src/app/api/admin/        URLs assinadas de upload e registro de fotos
+src/app/api/g/[slug]/     seleção, finalização e download em alta
+src/app/api/mp/webhook    confirmação de pagamento do Mercado Pago
+src/lib/                  banco, R2, sessão, preços e Mercado Pago
+supabase/migrations/      esquema do banco
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+A tabela `gallery_events` registra cada passo do casal (início da seleção, finalização, pagamento). Ela vai alimentar o CRM e os avisos de WhatsApp nos próximos módulos.
