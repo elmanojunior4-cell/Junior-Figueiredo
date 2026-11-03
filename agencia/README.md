@@ -7,6 +7,7 @@ para escrever no tom certo. Para trabalhar num cliente, diga ao Claude: "agora �
 
 | Conta | Nicho | Pendências no app (print de 03/11) |
 |---|---|---|
+| **@junior_figueiredo_fotografia** | **Fotografia de casamento (PILOTO)** | — |
 | @grupo.dttv | A confirmar (TV / internet?) | 20 comentários e mais 11 |
 | @pedroso.distribuicao | Distribuição e transportes (B2B) | 2 conversas e mais 28 |
 | @casadofazendeironep | Loja agropecuária / country | 1 comentário e mais 7 |
