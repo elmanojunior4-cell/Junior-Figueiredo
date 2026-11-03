@@ -45,7 +45,8 @@ Números, resultados e histórias verdadeiras que o cliente autoriza usar. As sk
 - +25 anos fotografando casamentos
 - Foto + filme com equipe própria (fotógrafos, videomaker, drone)
 - Galeria própria: o casal escolhe as fotos online e compra extras por Pix ou 12x
-- Nº de casamentos feitos: (preencher)
+- Mais de 1.000 casamentos fotografados
+- Entrega de fotos e filme em até 30 dias
 
 ## Chamada para ação
 

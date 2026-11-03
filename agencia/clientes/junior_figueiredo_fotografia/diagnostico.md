@@ -92,7 +92,7 @@ Junior Figueiredo | Casamentos
 **Bio:**
 ```
 Foto e filme do seu casamento pra você reviver o dia, não só lembrar.
-+25 anos · Sul de Minas e todo o Brasil
++1.000 casamentos · 25 anos · Sul de Minas e Brasil
 💍 Agenda 2027 aberta ↓
 ```
 
