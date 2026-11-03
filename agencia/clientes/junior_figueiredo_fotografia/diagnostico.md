@@ -53,19 +53,34 @@ Arquive as cópias fracas.
 
 **7. As legendas repetem a mesma fórmula.** "Foi um privilégio registrar", "momentos que ficarão para sempre", "eternizado" aparecem em quase todas. A primeira linha é genérica e não diz quem, onde nem o que teve de diferente.
 
-## Perfil (rubrica /ig-profile, parcial)
+## Perfil (rubrica /ig-profile): **62/100**
+
+Avaliado com os dados da API + print do perfil de 03/11/2026.
 
 | Item | Nota | Por quê |
 |---|---|---|
 | Nome (campo pesquisável) | 6/12 | "Junior Figueiredo Foto&Filme" não tem "casamento" nem região, que é o que a noiva busca |
 | 1ª linha da bio | 5/12 | É cargo ("Fotógrafo & Videomaker"), não diz o que a noiva ganha |
-| Resto da bio | 5/8 | "+25 anos" é boa prova; falta uma chamada clara |
-| @ | 4/6 | Longo, mas dá para falar |
-| Categoria e contato | 5/6 | Conta profissional ok |
+| Resto da bio | 5/8 | "+25 anos" é boa prova; falta chamada clara |
+| Fixados | 5/10 | Os 3 fazem o mesmo trabalho (beleza/prova). Falta um que explique a oferta e um que apresente você |
+| Link | 3/8 | Linktree + 1 outro link = menu. Uma porta converte mais |
+| Destaques | 3/8 | Feedback é ótimo; Storymaker, Romaria e 15 anos são outros públicos. Faltam Pacotes/Como funciona, Casamentos, Entrega/Álbum |
+| Grade | 5/8 | 1ª linha elegante e legível; logo abaixo entram os posts de Natal e quebram a vitrine de casamento |
+| Foto | 5/6 | Rosto visível, PB, fundo limpo |
+| @ | 4/6 | Longo, mas dá para falar; mesmo @ no Threads |
+| Categoria e contato | 6/6 | Fotógrafo(a), verificado, botão Contato |
 | Atividade recente | 9/10 | Postou ontem |
-| Fixados, link, destaques, grade, foto | — | Preciso de um print do perfil |
+| Stories | 6/6 | Story no ar |
 
-**Parcial: 34 de 54 pontos avaliáveis.**
+**Achado importante:** o fixado "Existe um instante… vale uma vida inteira" (carrossel com frase sobre a foto) tem **28,5 mil** visualizações, de 3x a 8x os seus posts normais. Frase forte em cima da foto é um formato para repetir.
+
+### Fixados sugeridos
+1. **Prova:** manter "Existe um instante…" (28,5 mil).
+2. **Oferta:** novo Reel ou carrossel "Como funciona fechar seu casamento comigo" (foto + filme, equipe, galeria online para escolher as fotos, prazo do álbum, agenda 2027) → substitui Jacqueline & Felipe (3.457).
+3. **Apresentação:** novo Reel seu falando para a câmera: quem é, 25 anos, a equipe → substitui o pré-wedding do lago (16,7 mil) quando estiver pronto.
+
+### Destaques sugeridos (nesta ordem)
+Casamentos · Como funciona · Feedback · Bastidores/Equipe · Álbum e galeria · depois 15 anos, Ensaios, Romaria, Storymaker
 
 ### Reescrita sugerida
 
