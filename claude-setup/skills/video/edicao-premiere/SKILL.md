@@ -33,8 +33,9 @@ Analise o material e entregue uma lista com timestamps:
 
 ## Gosto de edição (casamentos e eventos)
 
+- Um casamento tem quatro entregas: cerimônia completa, making of completo, recepção completa e um wedding film de 3 a 5 minutos. Cerimônia, making of e recepção são documentais e completas; não as transforme em trailer.
 - Planos longos, que respiram. Evite sequências de cortes rápidos fora de montagem.
-- Take tremido só se não houver alternativa estável, e avisando.
+- **Emoção vem antes da nota técnica.** Se dois takes têm a mesma emoção, use o estável. Se o take tremido ou imperfeito tem uma emoção que o estável não tem, use o tremido e marque na lista de takes ("tremido, mas é o único com o choro da mãe") para o Júnior decidir.
 - Momentos-chave inteiros, com pelo menos 1,5 s de folga antes e depois.
 - Tire respirações e pausas longas da fala. Música com ducking sob a voz.
 - Correção de cor sem estourar: confira tom de pele e altas luzes.

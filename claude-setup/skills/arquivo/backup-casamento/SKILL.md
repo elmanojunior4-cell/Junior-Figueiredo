@@ -14,6 +14,12 @@ Os HDs de casamento guardam material insubstituível de clientes. Um erro aqui n
 - **Nunca diga que um cartão pode ser formatado** sem a verificação completa do passo 5.
 - Sempre use aspas nos caminhos. Nomes de volume podem ter espaço no final (ex.: `"/Volumes/NIKON D600 "`). Liste com `ls /Volumes | cat -A` para ver espaços escondidos.
 
+## Contexto do arquivo
+
+- HDs base, ligados direto no Mac: **MAC JUNIOR**, **MAC JUNIOR 2** e **HD ESTUDIO**. Os outros HDs entram aos poucos, conforme são sincronizados.
+- O que mais importa proteger são os **brutos**. Pastas de material finalizado e entregue ao cliente (ex.: "cliente casamento", "CLIENTE") não precisam de segunda cópia.
+- Estratégia geral: regra 3-2-1, com Backblaze como cópia na nuvem.
+
 ## Passo a passo
 
 1. **Perguntar** qual evento e qual volume de origem.
