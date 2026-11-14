@@ -25,6 +25,8 @@ Use sempre que o Júnior mandar um vídeo bruto (ou já pré-editado por ele) pe
 10. **Transições:** whoosh (ruído com filtro varrendo, pico no corte, pan L→R) + punch-zoom rápido de 7% que decai em ~0,15 s em cada corte (`scale=...:eval=frame` + `crop=1080:1920`).
 11. **Card/arte final:** quando houver arte do evento, entrar no final com crossfade de 0,5 s + whoosh, 5 s na tela com zoom lento (zoompan 1→1,04) e fade out. **A música continua até o fim — o final nunca pode ficar mudo.**
 12. **Áudio:** voz com highpass 80 Hz, compressor leve, loudnorm I=-14 a -15 LUFS, TP -1,5; alimiter no mix.
+13. **ffmpeg seguro:** nunca use `apad` sem limite (sempre com `-shortest` ou `whole_dur`/`pad_dur`), porque gera áudio infinito e enche o disco. Confira o espaço livre antes de renders longos. Depois de qualquer cadeia de filtros de áudio, use `ffprobe` para confirmar que a trilha de voz está no arquivo.
+14. **Nomes com acento** exatamente como o Júnior escreveu (Ísis, não Isis) nas legendas e cards. Confira antes de renderizar.
 
 ## Fluxo de trabalho
 
